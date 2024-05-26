@@ -19,7 +19,7 @@ function verificarChute(){
   let palavraTentativa = tentativas>1 ? 'tentativas' : 'tentativa';
   
   if (chute==numeroSecreto) {
-    exibirTexto('h1', `Você acertou o número secreto com ${tentativas} ${palavraTentativa} !`);
+    exibirTexto('h1', `Você acertou com ${tentativas} ${palavraTentativa} !`);
     exibirTexto('p', 'Aperte em *Novo jogo* para tentar novamente');
     document.querySelector('#reiniciar').removeAttribute('disabled');
   } else {
